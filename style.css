@@ -1,0 +1,91 @@
+body {
+  color: rgb(20, 20, 20);
+  max-width: 750px;
+  padding: 3% 4% 3% 4%;
+  margin: auto; /* Center the article. */
+  font-size: 110%;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif; /* From "[CSS system fonts cheatsheet](https://devhints.io/css-system-font-stack)". */
+  line-height: 1.4;
+}
+
+/* No longer needed:
+@media (min-device-width: 750px) {
+  
+}
+*/
+
+h1 { font-size: 150%; }
+
+h2 { font-size: 120%; }
+
+h3 { font-size: 105%; }
+
+h4 { font-size: 95%; }
+
+
+img {
+  width: 35%;
+  margin: 1.5%;
+  float: right;
+}
+
+blockquote {
+  background: rgb(250,250,250);
+  margin-inline-start: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 1%;
+}
+
+tr:nth-child(even) { background-color: rgb(245, 245, 245); }
+
+input {
+  /* The following four lines prevent the input boxes from overflowing: "[HTML input textbox with a width of 100% overflows table cells](https://stackoverflow.com/questions/2371105/html-input-textbox-with-a-width-of-100-overflows-table-cells)". */
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+header {
+  text-align: right;
+}
+
+footer {
+  font-size: 70%;
+}
+
+
+/* IDs */
+
+#table_of_contents {
+  background: rgb(247,247,250);
+  padding: 0.1% 3% 0.1% 3%;
+}
+
+#footnotes {
+  font-size: 90%;
+  list-style-type: lower-alpha;
+}
+
+
+/* Classes */
+
+.full_line_equation {
+  margin:2%;
+  margin-left: 7%;
+}
+
+/* Based on molf's answer in "[Need advice on html/css structure for indented, threaded comments](https://stackoverflow.com/questions/1172843/need-advice-on-html-css-structure-for-indented-threaded-comments)". */
+.reply {
+  margin-left: 7%;
+}
