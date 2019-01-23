@@ -1,0 +1,2 @@
+Google Audit:
+.jpg is faster: but doesn't allow transparent background
