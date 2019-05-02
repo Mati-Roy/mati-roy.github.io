@@ -22,7 +22,9 @@ body {
 }
 */
 
-h1 { text-align: center;}
+h1 { text-align: center; }
+
+h4 { font-size: 20px; } 
 
 p { text-align: justify; }
 
