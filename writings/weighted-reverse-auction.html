@@ -34,8 +34,7 @@ a fair way to assign shared tasks
 
     <nav><a href="../index.html">Home</a> | <a href="../writings.html">Writings</a> | <a href="../contact.html">Contact</a></nav>
     
-
-<!----- Conversion time: 1.069 seconds.
+<!----- Conversion time: 1.055 seconds.
 
 
 Using this HTML file:
@@ -48,17 +47,24 @@ Using this HTML file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β17
-* Mon Apr 29 2019 13:22:20 GMT-0700 (PDT)
+* Tue May 14 2019 12:39:20 GMT-0700 (PDT)
 * Source doc: https://docs.google.com/open?id=1PKHm1UEB1keSCo4HUlbb7GyAPXzmKvNGaodFw_MWnB0
 ----->
 
 
 <p>
-<strong>Author</strong>: Mati Roy | <strong>Created</strong>: 2018-09-29 | <strong>Published</strong>: 2019-04-29 | <strong>Updated</strong>: 2019-04-29 | <strong>Version</strong>: 2 | <strong>Originality</strong>: low; similar things are discussed on <a href="https://en.wikipedia.org/wiki/Reverse_auction">reverse auction</a> and a <a href="https://en.wikipedia.org/wiki/Request_for_tender">request for tender</a> | <strong>Prerequisites</strong>: none | <strong>Confidence</strong>: tested
+<strong><a href="https://docs.google.com/document/d/1PKHm1UEB1keSCo4HUlbb7GyAPXzmKvNGaodFw_MWnB0/edit?usp=sharing">Google Doc</a> </strong>| <strong>Author</strong>: Mati Roy | <strong>Created</strong>: 2018-09-29 | <strong>Published</strong>: 2019-04-29 | <strong>Updated</strong>: 2019-05-14 | <strong>Version</strong>: 2 | <strong>Originality</strong>: low; similar things are discussed on <a href="https://en.wikipedia.org/wiki/Reverse_auction">reverse auction</a> and a <a href="https://en.wikipedia.org/wiki/Request_for_tender">request for tender</a> | <strong>Prerequisites</strong>: none | <strong>Confidence</strong>: tested  
 </p>
+
 <p>
-<strong>Related</strong>: <a href="https://docs.google.com/spreadsheets/d/1Fx-uQ6HALk-MJrk3GQxrkSgcm1N7-5ujlYzekNdks6k/">Template</a>, <a href="https://docs.google.com/spreadsheets/d/1xcZ057SL_qwaWVwPohyoPBP9RpisNh5ct5TUi8cxbwU/">Macroscope Auction</a>
+<strong>Related</strong>:
 </p>
+<ul>
+
+<li><a href="https://docs.google.com/spreadsheets/d/1Fx-uQ6HALk-MJrk3GQxrkSgcm1N7-5ujlYzekNdks6k/">Weighted reverse auction - Template</a>
+
+<li><a href="https://docs.google.com/document/d/16exqK4hl9oWrMHmW2cwAdfg4pDckKjjhfqHyMaO6Fno/">Notes on coordinating in intentional communities</a>
+
 <h1>Weighted reverse auction</h1>
 
 
@@ -68,20 +74,14 @@ Conversion notes:
 
 
 <p>
-<strong>Situation</strong>
+I have the impression this method can work well to split tasks among a group of 4-15 trustworthy people.
 </p>
-<p>
-In some situations a group of 2+ people need a task to be done. 
-</p>
-<p>
-<strong>Assumption</strong>
-</p>
-<p>
-Group of honest people (otherwise this breaks down in some ways).
-</p>
-<h2><a href="https://en.wikipedia.org/wiki/Reverse_auction">Reverse auction</a></h2>
+<h2>Reverse auction</h2>
 
 
+<p>
+Reference: <a href="https://en.wikipedia.org/wiki/Reverse_auction">Wikipedia page</a>
+</p>
 <p>
 1) <strong>Bid</strong>. Everyone writes a price for which they would be indifferent between doing the task or paying someone else to do it.
 </p>
@@ -92,36 +92,39 @@ Group of honest people (otherwise this breaks down in some ways).
 3) <strong>Select price</strong>. Take the lowest bid.
 </p>
 <p>
-
-    <span style="text-decoration:underline;">Details</span>: This incentivizes to bid one’s true value, like in a <a href="https://en.wikipedia.org/wiki/Vickrey_auction">Vickrey auction</a>.
-</p>
-<p>
-
-    <span style="text-decoration:underline;">Alternative pricing</span>: To share the profit, the other people pay the person in (2) the amount of money of the second lowest bid.
-</p>
-<p>
 This method assumes everyone will accomplish the task equally well. See next section if this assumption is false or undetermined.
 </p>
 <h2>Weighted reverse auction</h2>
 
 
 <p>
-1) <strong>Bid</strong>. People write a price for which they would be indifferent between doing the task or paying one of their clone to do it (if that was an option).
+<strong>Assumption</strong>. Group of honest people (otherwise this breaks down in some ways).
+</p>
+<p>
+1) <strong>Bid</strong>. Everyone writes a price for which they would be indifferent between doing the task or paying someone else as competent as them to do the task.
+</p>
+<p>
+
+    <span style="text-decoration:underline;">Extension</span>: Someone from outside the group could also bid, but the money will be paid by the people inside the group in either case, and external bidder don’t participate
 </p>
 <p>
 2) <strong>Evaluate capacity</strong>. People attribute number to everyone representing the fraction of the price they would be ready to pay the best person to do the task according to them.
 </p>
 <p>
 
-    <span style="text-decoration:underline;">Details</span>: One can be ready to pay more someone if they are: trustworthy, reliable, competent, or otherwise in a better position to accomplish the task, or have indirect reasons why they would be a valuable person to accomplish the task (ex.: train them). Oneself rates oneself as 1 as defined by (1).
+    <span style="text-decoration:underline;">Details</span>: One can be ready to pay more someone if they are: trustworthy, reliable, competent, or otherwise in a better position to accomplish the task, or have indirect reasons why they would be a valuable person to accomplish the task (ex.: train them).
 </p>
 <p>
 
-    <span style="text-decoration:underline;">Example</span>: If you’d be ready to pay someone else 50% less because you think they’ll do a worse job then the best person would, then you assign them a weight of 0.5. Implied: Put 0 for someone if you wouldn’t want them to do the job even for 1 cent.
+    <span style="text-decoration:underline;">Example</span>: If you’d be ready to pay someone 50% less than the best person because you think they’ll do a worse job, then you assign them a weight of 0.5. Assigning a value of 0 implies that you wouldn’t want that person to do the job even for arbitrarily small cost.
 </p>
 <p>
 
-    <span style="text-decoration:underline;">Variant</span>: The weight can also be anonymized.
+    <span style="text-decoration:underline;">Variable</span>: The weight can also be anonymized.
+</p>
+<p>
+
+    <span style="text-decoration:underline;">Variable</span>: If some people don’t put their evaluation, you can either default to the average or to 1.
 </p>
 <p>
 
@@ -146,82 +149,42 @@ This method assumes everyone will accomplish the task equally well. See next sec
 6) <strong>Select price</strong>. Take the lowest bid
 </p>
 <p>
+7) <strong>Split the cost</strong>. Split the cost equally between all housemates, including among the person that will do the task.
+</p>
+<h2>Alternatives / Extensions</h2>
 
-    <span style="text-decoration:underline;">Details</span>: This also incentivizes to bid one’s true value, like in a <a href="https://en.wikipedia.org/wiki/Vickrey_auction">Vickrey auction</a>
-</p>
-<p>
 
-    <span style="text-decoration:underline;">Alternative pricing</span>: To share the profit, the other people pay the person in (5) the amount of money of the second lowest bid.
+<p>
+<strong>Alternative</strong>: Everyone bids, then people vote for someone.
 </p>
 <p>
-7) <strong>Split the cost</strong>. Split the cost equally between all housemate, including among the person that will do the task.
+<strong>Extension</strong>: If someone in a group really doesn’t benefit from a task, they can opt-out. Otherwise, we should try to reach consensus on task selection.
 </p>
 <p>
-<strong>Addendum</strong>: Someone from outside the group could also bid, but the money will be paid by the people inside the group in either case.
-</p>
-<p>
-There are some specific cases where some people might disagree with the split, but I think this would happen rarely, and when it does, a combination of people might need to do the task. 
-</p>
-<p>
-
-    <span style="text-decoration:underline;">Example</span>: some people might need to pay someone more than they would have been ready to be paid, and personally disagree that the person is more competent.
-</p>
-<p>
-<span style="text-decoration:underline;">Addendum</span>: If someone in a group really doesn’t benefit from a task, they can opt-out. Otherwise, we should try to reach consensus on task selection.
-</p>
-<p>
-<span style="text-decoration:underline;">Alternative</span>: everyone bids, then people vote for someone
+<strong>Extension</strong>: If two people want to work on a task, the two lowest bid can do the task at the second lowest bid.
 </p>
 <h2>Addendum</h2>
 
 
 <p>
-We first tried with the weight for oneself being 1 and adjusted other’s weights accordingly, but this overweight some people’s preferences.
+<strong>Edge case</strong>: There are some specific cases where some people might disagree with the split, but I think this would happen rarely, and when it does, a combination of people might need to do the task. 
 </p>
 <p>
-<span style="text-decoration:underline;">Norm</span>: benefit of the doubt; put 1 to new housemates; (except for responsibility that are public facing, like finding new housemates, in which case it’s better if a long term tenant aware with the house does it).
-</p>
-<p>
-<span style="text-decoration:underline;">Norm</span>: fund should be kept in a separate account or the account of a trusted tenant; but the rest of the finance responsibility can be done by anyone.
-</p>
-<p>
-<span style="text-decoration:underline;">Alternative</span>: If your intentional community prefers for everyone to contribute an equal amount of direct energy (as oppose of energy or funding), you can use a variant. Such a variant, that isn’t quality-weighted, can be found on: <a href="https://www.splitit.com/">https://www.splitit.com/</a> (related: <a href="https://en.wikipedia.org/wiki/Assignment_problem">Assignment problem</a>).
-</p>
-<p>
-<span style="text-decoration:underline;">Extension</span>: If two people want to work on a task, the two lowest bid can do the task at the second lowest bid.
-</p>
-<h2>Annex</h2>
 
-
-<p>
-<strong>Meta: </strong>this can be skipped; it’s more notes to myself
+    <span style="text-decoration:underline;">Example</span>: Some people might need to pay someone more than they would have been ready to be paid, and personally disagree that the person is more competent.
 </p>
 <p>
-<strong><span style="text-decoration:underline;">Edge cases</span></strong>
+<strong>Norm</strong>: Give the benefit of the doubt; put 1 to new housemates; (except for responsibility that are public facing, like finding new housemates, in which case it’s better if a long term tenant aware with the house does it).
 </p>
 <p>
-Consider people A, B, C.
+<strong>Norm</strong>: Fund should be kept in a separate account or the account of a trusted tenant; but the rest of the finance responsibility can be done by anyone.
 </p>
 <p>
-	Price	A	B	C
+<strong>Platform</strong>: We use <a href="https://www.splitwise.com/">Splitwise</a> to track our finance.
 </p>
 <p>
-A	10$	1	0.1	1
+<strong>Previous version</strong>: We first tried with the weight for oneself being 1 and adjusted other’s weights accordingly, but this overweight some people’s preferences.
 </p>
-<p>
-B	10$	0.1	1	1
-</p>
-<p>
-C	1000$	1	1	1
-</p>
-<p>
-In this case, everyone would prefer if A and B did the task together, so the method fails.
-</p>
-<p>
-Current patch: In general, if someone has no one else to outsource the task to that is less expensive than them, but haven’t been selected to do the task, then they can join the other person in doing the task (and presumably avoid paying them to do the task).
-</p>
-
-
 
     <link rel="stylesheet" href="../style.css">
 
