@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mati_roy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://matiroy.com
+  * I am mati_roy (https://keybase.io/mati_roy) on keybase.
+  * I have a public key ASBNCmjspOYUWQlbdmoeplfvc1gSdj7Oozi23oX8ItkfJwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e1aee8b1892cd6650986e4d9efad3234b0c7d8fc9247cc0bb755317cc876619f0a",
+      "host": "keybase.io",
+      "kid": "01204d0a68eca4e61459095b766a1ea657ef735812763ecea338b6de85fc22d91f270a",
+      "uid": "ffad5188f0ede86dbe5a20de3b984219",
+      "username": "mati_roy"
+    },
+    "merkle_root": {
+      "ctime": 1569725561,
+      "hash": "2c7c88452478d691f0a74ddb40298cc15e53621b2cac5a9766022c933650e83c8867e603bfd4f814f1d4ec9188227fd9b1b4151f2f79c515d1a5f4a166017e85",
+      "hash_meta": "3a2662a4f3219dc85d5a3d9dd1bfece4b03d7123828802f0a92f8a792d1b059a",
+      "seqno": 7793350
+    },
+    "service": {
+      "entropy": "+Mmmnu5RCy/WS4af0k6gg1/T",
+      "hostname": "matiroy.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.2"
+  },
+  "ctime": 1569725583,
+  "expire_in": 504576000,
+  "prev": "86cd37dcfbad42930c373de5de9f7822afdf36a2587deb214a76c9e576b9157f",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTQpo7KTmFFkJW3ZqHqZX73NYEnY+zqM4tt6F/CLZHycKp3BheWxvYWTESpcCC8Qghs033PutQpMMNz3l3p94Iq/fNqJYfeshSnbJ5Xa5FX/EICbny/2hCI7uNUfurQDBUBpc84a6Jhw7xxBGDGzKSuqSAgHCo3NpZ8RA0PmmXRtBz1XjJ9R6FJ1zOmBsAss1drANmowHLKDpCHnSVUIUwVNFKsCx5ASoWYIVgaE3pzwh1cJJtjcN7n4MA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBF7tHBGzKGabYPWmcfgddA29a4Ju5dJsa7DlQexQQSVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mati_roy
+
+==================================================================
