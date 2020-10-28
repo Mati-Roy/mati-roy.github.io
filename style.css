@@ -81,6 +81,10 @@ input {
   padding-left: 9px;
 }
 
+.date {
+  font-size: 13px;
+  margin-left: 33px;
+}
 
 /* Menu */
 nav a {
