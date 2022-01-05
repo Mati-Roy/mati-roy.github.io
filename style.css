@@ -215,3 +215,6 @@ table td:not(.left) {
   text-align: center;
 }
 
+.tablesorter-default tr:nth-child(even) td {
+  background-color: rgb(245, 245, 245);
+}

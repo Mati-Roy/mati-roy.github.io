@@ -26,6 +26,7 @@
       max-width: none !important;
     }
   </style>
+  <link rel="stylesheet" href="css/tablesorter/theme.default.min.css" />
   <link rel="stylesheet" href="css/TomasikCSS.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -485,14 +486,17 @@
 </body>
 
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+
 <script type="text/javascript">
-  var $table = $('table');
-  $table.tablesorter({
-    theme: 'bootstrap',
-    headerTemplate: '{content} {icon}',
-    sortInitialOrder: 'desc',
-    sortList: [[4, 1]],
-    widgets: ['uitheme']
+  $(document).ready(function($) {
+    const $table = $('table');
+    $table.tablesorter({
+      theme: 'default',
+      headerTemplate: '{content}{icon}',
+      sortInitialOrder: 'desc',
+      sortList: [[4, 1]],
+      widgets: ['uitheme'],
+    });
   });
 
   (function ($) {
