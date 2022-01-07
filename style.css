@@ -218,3 +218,12 @@ table td:not(.left) {
 .tablesorter-default tr:nth-child(even) td {
   background-color: rgb(245, 245, 245);
 }
+
+
+/***** Disqus *****/
+
+#disqus_thread {
+  border-top: 1px solid black;
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
