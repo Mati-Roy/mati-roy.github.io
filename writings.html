@@ -489,13 +489,15 @@
 
 <script type="text/javascript">
   (function ($) {
-    const $table = $('table');
-    $table.tablesorter({
-      theme: 'default',
-      headerTemplate: '{content}{icon}',
-      sortInitialOrder: 'desc',
-      sortList: [[4, 1]],
-      widgets: ['uitheme'],
+    $(function() {
+      const $table = $('table');
+      $table.tablesorter({
+        theme: 'default',
+        headerTemplate: '{content}{icon}',
+        sortInitialOrder: 'desc',
+        sortList: [[4, 1]],
+        widgets: ['uitheme'],
+      });
     });
 
     window.fnames = new Array();
