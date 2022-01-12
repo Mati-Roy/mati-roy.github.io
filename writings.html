@@ -488,18 +488,18 @@
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
 <script type="text/javascript">
-  (function ($) {
-    $(document).ready(function() {
-      const $table = $('table');
-      $table.tablesorter({
-        theme: 'default',
-        headerTemplate: '{content}{icon}',
-        sortInitialOrder: 'desc',
-        sortList: [[4, 1]],
-        widgets: ['uitheme'],
-      });
+  jQuery(document).ready(function($) {
+    const $table = $('table');
+    $table.tablesorter({
+      theme: 'default',
+      headerTemplate: '{content}{icon}',
+      sortInitialOrder: 'desc',
+      sortList: [[4, 1]],
+      widgets: ['uitheme'],
     });
+  });
 
+  (function ($) {
     window.fnames = new Array();
     window.ftypes = new Array();
     fnames[0] = "EMAIL";
