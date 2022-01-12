@@ -488,7 +488,7 @@
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
 <script type="text/javascript">
-  $(function() {
+  (function ($) {
     const $table = $('table');
     $table.tablesorter({
       theme: 'default',
@@ -497,9 +497,7 @@
       sortList: [[4, 1]],
       widgets: ['uitheme'],
     });
-  });
 
-  (function ($) {
     window.fnames = new Array();
     window.ftypes = new Array();
     fnames[0] = "EMAIL";
