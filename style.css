@@ -149,7 +149,6 @@ a[target="_blank"] {
   background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84) !important;
   background-position: center right;
   background-repeat: no-repeat;
-  padding-right: 13px;
 }
 
 
@@ -226,4 +225,9 @@ table td:not(.left) {
   border-top: 1px solid black;
   margin-top: 3rem;
   padding-top: 3rem;
+}
+
+/***** Link *****/
+.title-link {
+  font-weight: bold;
 }
