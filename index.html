@@ -30,6 +30,32 @@
   <!-- Pinterest meta tag -->
   <meta name="p:domain_verify" content="1e64118bc4b26b928ca34c6b5e799a38" />
 
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .image-center {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    ul li {
+      margin: 0px !important;
+    }
+    
+    .fa-brands, .fab {
+      padding: 4px 12px !important;
+    }
+    
+    .socials {
+      margin-left: 45px;
+    }
+
+  </style>
+
   <link rel="stylesheet" href="css/TomasikCSS.css" />
   <link rel="stylesheet" href="style.css">
 
@@ -151,6 +177,82 @@
     <br />
   </div>
 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  renderTodos();
+});
+
+// Updated staticTodos array to include items for both lists
+const staticTodos = [
+  { task: 'Signing up for cryonics', completed: false, url: 'https://waitbutwhy.com/2016/03/cryonics.html', list: 1 },
+  { task: 'Lifelogging', completed: false, url: 'https://www.lesswrong.com/posts/k8mwvvvpjMGcZLAKH/the-case-for-lifelogging-as-life-extension', list: 1 },
+  { task: 'Saving money', completed: false, url: 'https://www.mrmoneymustache.com/2012/07/15/two-fun-tools-from-the-mmm-software-department/', list: 1 },
+  { task: 'Selecting embryos', completed: false, url: 'https://www.lesswrong.com/posts/yT22RcWrxZcXyGjsA/how-to-have-polygenically-screened-children', list: 1 },
+  { task: 'Subscribing to the next addition to this list', completed: false, url: 'http://example.com/task5', list: 1 }
+  
+];
+
+function toggleTodo(index) {
+  staticTodos[index].completed = !staticTodos[index].completed;
+  saveTodos();
+}
+
+function saveTodos() {
+  localStorage.setItem('todos', JSON.stringify(staticTodos));
+  renderTodos();
+}
+
+function renderTodos() {
+  // Render for todoList1
+  renderTodoList('todoList', 1);
+  // Render for todoList2
+  renderTodoList('todoList2', 2);
+}
+
+function renderTodoList(listId, listNumber) {
+  const todoList = document.getElementById(listId);
+  todoList.innerHTML = ''; // Clear current todos
+
+  staticTodos.filter(todo => todo.list === listNumber).forEach((todo, index) => {
+    const todoItem = document.createElement('li');
+    
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = todo.completed;
+    checkbox.classList.add("checkbox"); // Use classList.add instead of class
+    checkbox.onchange = () => toggleTodo(staticTodos.indexOf(todo)); // Use indexOf to find the correct index in the main array
+    
+    const label = document.createElement('label');
+    label.style.marginLeft = '8px'; // Add space between checkbox and label
+    
+    const link = document.createElement('a');
+    link.href = todo.url;
+    link.textContent = todo.task;
+    link.target = '_blank'; // Open in a new tab
+    label.appendChild(link);
+    
+    todoItem.appendChild(checkbox);
+    todoItem.appendChild(label);
+    todoList.appendChild(todoItem);
+  });
+}
+
+// On page load, check for saved todos and update the staticTodos accordingly
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTodos = JSON.parse(localStorage.getItem('todos'));
+  if (savedTodos) {
+    savedTodos.forEach((savedTodo, index) => {
+      const todo = staticTodos.find(todo => todo.task === savedTodo.task);
+      if (todo) {
+        todo.completed = savedTodo.completed;
+      }
+    });
+    renderTodos(); // Render the lists again with updated completion statuses
+  }
+});
+
+    </script>
 
 
 
