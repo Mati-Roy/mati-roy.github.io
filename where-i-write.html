@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131917224-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-131917224-1");
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Mati Roy</title>
+  <meta name="description" content="The personal website of Mati Roy." />
+
+
+  <style type="text/css">
+    body {
+      max-width: none !important;
+    }
+  </style>
+  <link rel="stylesheet" href="css/tablesorter/theme.default.min.css" />
+  <link rel="stylesheet" href="css/TomasikCSS.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a> &nbsp; • &nbsp; <a href="writings.html">Writings</a> &nbsp; • &nbsp; <a
+      href="resume.html">Resume</a> &nbsp; • &nbsp; <a href="How-I-can-help-you.html">Services</a> &nbsp; • &nbsp; <a
+      href="art.html">Art</a> &nbsp; • &nbsp; <a href="readings.html">Readings</a> &nbsp; • &nbsp; <a
+      href="contact.html">Contact</a>
+  </nav>
+  <br />
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+  <script type="text/javascript" src="js/jquery.tablesorter.pager.js"></script>
+  <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" /> -->
+</body>
+
+<!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script> -->
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    const $table = $('#InterviewsTable');
+    $table.tablesorter({
+      theme: 'default',
+      headerTemplate: '{content}{icon}',
+      sortInitialOrder: 'desc',
+      sortList: [[0, 1]],
+      widgets: ['uitheme'],
+    });
+  });
+
+  $(document).ready(function () {
+    const $table = $('#ArticlesTable');
+    $table.tablesorter({
+      theme: 'default',
+      headerTemplate: '{content}{icon}',
+      sortInitialOrder: 'desc',
+      sortList: [[4, 1]],
+      widgets: ['uitheme'],
+    });
+  });
+
+  $(document).ready(function () {
+    const $table = $('#FacebookGroupsTable');
+    $table.tablesorter({
+      theme: 'default',
+      headerTemplate: '{content}{icon}',
+      sortInitialOrder: 'desc',
+      sortList: [[3, 1]],
+      widgets: ['uitheme'],
+    });
+  });
+
+  /*
+  (function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = "EMAIL";
+    ftypes[0] = "email";
+    fnames[1] = "FNAME";
+    ftypes[1] = "text";
+    fnames[2] = "LNAME";
+    ftypes[2] = "text";
+    fnames[3] = "ADDRESS";
+    ftypes[3] = "address";
+    fnames[4] = "PHONE";
+    ftypes[4] = "phone";
+    fnames[5] = "BIRTHDAY";
+    ftypes[5] = "birthday";
+  })(jQuery);
+  var $mcj = jQuery.noConflict(true);
+  */
+</script>
+
+</html>
