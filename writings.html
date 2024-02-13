@@ -25,6 +25,21 @@
     body {
       max-width: none !important;
     }
+
+    
+    /* CSS for mobile devices */
+    @media (max-width: 768px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+    
+    /* CSS for desktop devices */
+    @media (min-width: 768px) {
+        .hide-on-desktop {
+            display: none;
+        }
+    }
   </style>
   <link rel="stylesheet" href="css/tablesorter/theme.default.min.css" />
   <link rel="stylesheet" href="css/TomasikCSS.css" />
@@ -52,404 +67,59 @@
   <p>I wrote code to run some of Anthropics' evaluation datasets on GPT-4 for the paper <a  target="_blank" href="https://arxiv.org/pdf/2209.00626.pdf">The Alignment Problem from a Deep Learning Perspective</a>.</p>
   
   <h2 id="Articles">My articles</h2>
-  <p>The following is a list of posts that were written and published by me.</p>
+  <p>The following is a list of posts that were written and published by me. The higher the importance value, the more important I consider the article.</p>
+
   <table id="ArticlesTable" class="tableizer-table tablesorter" style="width:100%">
     <thead>
       <tr class="tableizer-firstrow">
-        <th style="width: 10%;">published</th>
         <th style="width: 50%;">title</th>
         <th style="width: 15%;">category</th>
-        <th style="width: 10%;">updated</th>
-        <th style="width: 5%;">importance</th>
-        <th style="width: 5%;">practical importance</th>
-        <th style="width: 5%;">intellectual importance</th>
+        <th class="hide-on-mobile" style="width: 10%;">published</th>
+        <th class="hide-on-desktop" style="width: 10%;">date</th>
+        <th class="hide-on-desktop" style="width: 5%;">value</th>
+        <th class="hide-on-mobile" style="width: 5%;">importance</th>
+        <th class="hide-on-mobile" style="width: 5%;">practical importance</th>
+        <th class="hide-on-mobile" style="width: 5%;">intellectual importance</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>2019-04-29</td>
-        <td class="left"><a href="https://matiroy.com/writings/Should-I-record-my-life.html" />Should I record my life?
-        </td>
-        <td>Lifelogging</td>
-        <td>2019-05-15</td>
-        <td>9</td>
-        <td>10</td>
-        <td>9</td>
-      </tr>
-      <tr>
-        <td>2020-12-08</td>
-        <td class="left"><a href="https://matiroy.com/writings/Matis-2020-donation-recommendations.html" />Mati's 2020
-          donation recommendations (now with a 2021 update)</td>
-        <td>Altruism</td>
-        <td>2020-12-08</td>
-        <td>9</td>
-        <td>10</td>
-        <td>9</td>
-      </tr>
-      <tr>
-        <td>2020-03-27</td>
-        <td class="left"><a target="_blank"
-            href="https://forum.effectivealtruism.org/posts/j63K34P9hermM4bfN/why-do-we-need-philanthropy-can-we-make-it-obsolete" />Why
-          do we need philanthropy? Can we make it obsolete?</td>
-        <td>Altruism</td>
-        <td>2020-04-25</td>
-        <td>9</td>
-        <td>5</td>
-        <td>9</td>
-      </tr>
-      <tr>
-        <td>2019-04-16</td>
-        <td class="left"><a href="https://matiroy.com/writings/Consume-now-or-later.html" />Consume now or later?</td>
-        <td></td>
-        <td>2019-04-16</td>
-        <td>8</td>
-        <td>10</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2020-06-09</td>
-        <td class="left"><a target="_blank" href="http://lessdead.com/tell-your-grandparents-about-cryonics" />Tell your
-          (grand)parents about cryonics</td>
-        <td>Biostasis</td>
-        <td>2020-06-09</td>
-        <td>8</td>
-        <td>10</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-05-15</td>
-        <td class="left"><a href="https://matiroy.com/writings/How-I-audio-video-record-my-life.html" />How I
-          audio-video record my life</td>
-        <td>Lifelogging</td>
-        <td>2019-05-15</td>
-        <td>8</td>
-        <td>10</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2020-09-03</td>
-        <td class="left"><a target="_blank"
-            href="https://forum.effectivealtruism.org/posts/rfrdwR69packEJE7Q/the-community-s-conception-of-value-drifting-is-sometimes" />The
-          community's conception of value drifting is sometimes too narrow</td>
-        <td>Altruism</td>
-        <td></td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2020-05-27</td>
-        <td class="left"><a target="_blank"
-            href="https://forum.effectivealtruism.org/posts/sF7Wec3B9MoSy8fKG/are-selection-forces-selecting-for-or-against-altruism-will?commentId=kSebuk7YbhRfcSGyL" />Are
-          selection forces selecting for or against altruism? Will people in the future be more, as, or less altruistic?
-        </td>
-        <td>Altruism</td>
-        <td></td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2020-07-15</td>
-        <td class="left"><a target="_blank"
-            href="https://forum.effectivealtruism.org/posts/XQ7c39BKszqRGzdK3/can-you-have-an-egoistic-preference-about-your-own-birth?commentId=icyv8dW3kqS9qQPgY" />Can
-          you have an egoistic preference about your own birth?</td>
-        <td>Altruism</td>
-        <td></td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2020-10-07</td>
-        <td class="left"><a target="_blank" href="http://lessdead.com/buying-micro-biostasis" />Buying micro-biostasis
-        </td>
-        <td>Biostasis</td>
-        <td>2020-10-07</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2020-12-08</td>
-        <td class="left"><a target="_blank"
-            href="https://forum.effectivealtruism.org/posts/KoJebRWH26DwkAhks/when-should-you-use-lotteries" />When
-          should you use lotteries?</td>
-        <td>Altruism</td>
-        <td>2020-12-08</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2020-01-16</td>
-        <td class="left"><a href="https://matiroy.com/writings/How-to-control-your-attention.html" />How to control your
-          attention?</td>
-        <td>Productivity</td>
-        <td>2019-01-08</td>
-        <td>5</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>1905-07-12</td>
-        <td class="left"><a target="_blank"
-            href="https://coda.io/@mati-roy/public-notes/how-to-be-productive-when-low-energy-19" />How to be productive
-          when low energy?</td>
-        <td>Productivity</td>
-        <td></td>
-        <td>5</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2020-04-21</td>
-        <td class="left"><a target="_blank"
-            href="https://www.lesswrong.com/posts/qB6EBGS5kZpvpmS4e/what-are-good-defense-mechanisms-against-dangerous-bullet" />What
-          are good defense mechanisms against dangerous bullet biting?</td>
-        <td>Rationality</td>
-        <td></td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2022-11-06</td>
-        <td class="left"><a target="_blank"
-            href="https://www.lesswrong.com/posts/vH7n8tuPxpPyKJpuX/exams-only-universities" />Exams-Only Universities
-        </td>
-        <td></td>
-        <td>2022-11-06</td>
-        <td>5</td>
-        <td>1</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>2019-04-27</td>
-        <td class="left"><a href="https://matiroy.com/writings/minimalism.html" />Notes on minimalism</td>
-        <td>Productivity</td>
-        <td>2019-04-27</td>
-        <td>4</td>
-        <td>7</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="left"><a href="https://matiroy.com/writings/How-to-buy-attention.html" />How to buy attention?</td>
-        <td>Productivity</td>
-        <td>2019-03-12</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2022-01-11</td>
-        <td class="left"><a href="https://matiroy.com/writings/timetracking.html" />How I use Clockify, my timetracking
-          app</td>
-        <td>Productivity</td>
-        <td>2022-01-11</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2020-12-08</td>
-        <td class="left"><a href="https://matiroy.com/writings/Signaling-importance.html" />Signaling importance</td>
-        <td></td>
-        <td>2020-12-08</td>
-        <td>4</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2019-01-23</td>
-        <td class="left"><a target="_blank"
-            href="https://timelines.issarice.com/wiki/Timeline_of_brain_preservation" />Timeline of brain preservation
-        </td>
-        <td>Cryonics</td>
-        <td>2020-10-06</td>
-        <td>4</td>
-        <td>2</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2020-05-03</td>
-        <td class="left"><a target="_blank"
-            href="http://lessdead.com/how-many-humans-will-have-their-brain-preserved-forecasts-and-trends" />How many
-          humans will have their brain preserved? Forecasts and trends</td>
-        <td>Cryonics</td>
-        <td>2020-05-07</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-04-29</td>
-        <td class="left"><a href="https://matiroy.com/writings/weighted-reverse-auction.html" />Weighted reverse auction
-        </td>
-        <td>Community</td>
-        <td>2019-05-14</td>
-        <td>3</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>2019-12-04</td>
-        <td class="left"><a href="https://matiroy.com/writings/metatags.html" />Meta-tags</td>
-        <td>Meta</td>
-        <td>2019-12-04</td>
-        <td>3</td>
-        <td>5</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2019-12-13</td>
-        <td class="left"><a href="https://matiroy.com/writings/Discussion-platform-comparison.html" />Discussion
-          platform comparison</td>
-        <td>Lifelogging</td>
-        <td>2019-03-21</td>
-        <td>3</td>
-        <td>5</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2019-07-21</td>
-        <td class="left"><a target="_blank"
-            href="https://www.lesswrong.com/posts/EHkGW9c5Gjjmgkm3o/what-questions-about-the-future-would-influence-people-s" />What
-          questions about the future would influence people’s actions today if they were informed by a prediction
-          market?</td>
-        <td></td>
-        <td></td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="left"><a href="https://matiroy.com/communities.html" />Montreal Communities</td>
-        <td>Local</td>
-        <td>2020-02-06</td>
-        <td>2</td>
-        <td>3</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2019-04-16</td>
-        <td class="left"><a href="https://matiroy.com/writings/Tips-for-people-in-Montreal.html" />Tips for people in
-          Montreal</td>
-        <td>Local</td>
-        <td>2019-12-05</td>
-        <td>2</td>
-        <td>3</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2019-04-14</td>
-        <td class="left"><a href="https://matiroy.com/writings/Typology-on-the-desirability-of-suicide.html" />A
-          typology of the value of intervening with suicidal people</td>
-        <td>Altruism</td>
-        <td>2019-04-14</td>
-        <td>2</td>
-        <td>2</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2020-09-26</td>
-        <td class="left"><a target="_blank"
-            href="https://www.lesswrong.com/posts/evDZoYG4p6ZkQQkDw/surviving-petrov-day" />Surviving Petrov Day</td>
-        <td>Altruism</td>
-        <td></td>
-        <td>2</td>
-        <td>2</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-05-26</td>
-        <td class="left"><a href="https://matiroy.com/writings/Rules-for-meta-gaming.html" />Rules for meta-gaming</td>
-        <td></td>
-        <td>2019-05-26</td>
-        <td>2</td>
-        <td>2</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-03-08</td>
-        <td class="left"><a href="https://matiroy.com/writings/posters.html" />Posters</td>
-        <td>Community</td>
-        <td>2019-03-08</td>
-        <td>2</td>
-        <td>2</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>2020-03-04</td>
-        <td class="left"><a target="_blank"
-            href="https://www.lesswrong.com/posts/6ag3vBEearqTZvHW3/reference-post-info-cone" />[Reference Post] Info
-          cone</td>
-        <td>Altruism</td>
-        <td></td>
-        <td>2</td>
-        <td>1</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2020-02-12</td>
-        <td class="left"><a target="_blank" href="http://lessdead.com/cryonics-2019-annual-update" />Cryonics 2019
-          Annual Update</td>
-        <td>Cryonics</td>
-        <td></td>
-        <td>2</td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-03-21</td>
-        <td class="left"><a href="https://matiroy.com/writings/List-of-projects-on-gender-neutrality.html" />List of
-          projects on gender neutrality</td>
-        <td></td>
-        <td>2019-03-21</td>
-        <td>2</td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2019-03-31</td>
-        <td class="left"><a href="https://matiroy.com/writings/Trying-to-be-immortal-is-fucking-crazy.html" />Trying to
-          be immortal is fucking crazy</td>
-        <td></td>
-        <td></td>
-        <td>2</td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr hidden>
-        <td>2021-12-10</td>
-        <td class="left"><a target="_blank" href="https://matiroy.com/writings/My-life-plan.html" />My current life plan</td>
-        <td>Personal</td>
-        <td>2021-12-10</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr hidden>
-        <td>2022-07-15</td>
-        <td class="left"><a target="_blank" href="http://bit.ly/DatingMatiCarissa" />Mati & Carissa's dating profile
-        </td>
-        <td>Personal</td>
-        <td>2022-09-05</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr hidden>
-        <td>2021-12-11</td>
-        <td class="left"><a href="https://matiroy.com/writings/My-dating-profile.html" />My dating profile</td>
-        <td>Personal</td>
-        <td>2021-12-11</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/My-dating-profile.html"/>My dating profile</td><td>Personal</td><td class="hide-on-mobile">2021-12-11</td><td class="hide-on-desktop">2021</td><td>10</td><td class="hide-on-mobile"></td><td class="hide-on-mobile"></td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/My-life-plan.html"/>My current life plan</td><td>Personal</td><td class="hide-on-mobile">2021-12-10</td><td class="hide-on-desktop">2021</td><td>10</td><td class="hide-on-mobile"></td><td class="hide-on-mobile"></td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Matis-2020-donation-recommendations.html"/>Mati's 2020 donation recommendations (now with a 2021 update)</td><td>Altruism</td><td class="hide-on-mobile">2020-12-08</td><td class="hide-on-desktop">2020</td><td>9</td><td class="hide-on-mobile">10</td><td class="hide-on-mobile">9</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Should-I-record-my-life.html"/>Should I record my life?</td><td>Lifelogging</td><td class="hide-on-mobile">2019-04-29</td><td class="hide-on-desktop">2019</td><td>9</td><td class="hide-on-mobile">10</td><td class="hide-on-mobile">9</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://forum.effectivealtruism.org/posts/j63K34P9hermM4bfN/why-do-we-need-philanthropy-can-we-make-it-obsolete"/>Why do we need philanthropy? Can we make it obsolete?</td><td>Altruism</td><td class="hide-on-mobile">2020-03-27</td><td class="hide-on-desktop">2020</td><td>9</td><td class="hide-on-mobile">5</td><td class="hide-on-mobile">9</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Consume-now-or-later.html"/>Consume now or later?</td><td></td><td class="hide-on-mobile">2019-04-16</td><td class="hide-on-desktop">2019</td><td>8</td><td class="hide-on-mobile">10</td><td class="hide-on-mobile">8</td></tr>
+      <tr><td class="left"><a target="_blank" href="http://lessdead.com/tell-your-grandparents-about-cryonics"/>Tell your (grand)parents about cryonics</td><td>Biostasis</td><td class="hide-on-mobile">2020-06-09</td><td class="hide-on-desktop">2020</td><td>8</td><td class="hide-on-mobile">10</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/How-I-audio-video-record-my-life.html"/>How I audio-video record my life</td><td>Lifelogging</td><td class="hide-on-mobile">2019-05-15</td><td class="hide-on-desktop">2019</td><td>8</td><td class="hide-on-mobile">10</td><td class="hide-on-mobile">1</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://forum.effectivealtruism.org/posts/sF7Wec3B9MoSy8fKG/are-selection-forces-selecting-for-or-against-altruism-will?commentId=kSebuk7YbhRfcSGyL"/>Are selection forces selecting for or against altruism? Will people in the future be more, as, or less altruistic?</td><td>Altruism</td><td class="hide-on-mobile">2020-05-27</td><td class="hide-on-desktop">2020</td><td>8</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">8</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://forum.effectivealtruism.org/posts/XQ7c39BKszqRGzdK3/can-you-have-an-egoistic-preference-about-your-own-birth?commentId=icyv8dW3kqS9qQPgY"/>Can you have an egoistic preference about your own birth?</td><td>Altruism</td><td class="hide-on-mobile">2020-07-15</td><td class="hide-on-desktop">2020</td><td>8</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">8</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://forum.effectivealtruism.org/posts/rfrdwR69packEJE7Q/the-community-s-conception-of-value-drifting-is-sometimes"/>The community's conception of value drifting is sometimes too narrow</td><td>Altruism</td><td class="hide-on-mobile">2020-09-03</td><td class="hide-on-desktop">2020</td><td>8</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">8</td></tr>
+      <tr><td class="left"><a target="_blank" href="http://lessdead.com/buying-micro-biostasis"/>Buying micro-biostasis</td><td>Biostasis</td><td class="hide-on-mobile">2020-10-07</td><td class="hide-on-desktop">2020</td><td>6</td><td class="hide-on-mobile">7</td><td class="hide-on-mobile">6</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://forum.effectivealtruism.org/posts/KoJebRWH26DwkAhks/when-should-you-use-lotteries"/>When should you use lotteries?</td><td>Altruism</td><td class="hide-on-mobile">2020-12-08</td><td class="hide-on-desktop">2020</td><td>6</td><td class="hide-on-mobile">7</td><td class="hide-on-mobile">6</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://coda.io/@mati-roy/public-notes/how-to-be-productive-when-low-energy-19"/>How to be productive when low energy?</td><td>Productivity</td><td class="hide-on-mobile">1905-07-12</td><td class="hide-on-desktop">1905</td><td>5</td><td class="hide-on-mobile">6</td><td class="hide-on-mobile">3</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/How-to-control-your-attention.html"/>How to control your attention?</td><td>Productivity</td><td class="hide-on-mobile">2020-01-16</td><td class="hide-on-desktop">2020</td><td>5</td><td class="hide-on-mobile">6</td><td class="hide-on-mobile">3</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://www.lesswrong.com/posts/qB6EBGS5kZpvpmS4e/what-are-good-defense-mechanisms-against-dangerous-bullet"/>What are good defense mechanisms against dangerous bullet biting?</td><td>Rationality</td><td class="hide-on-mobile">2020-04-21</td><td class="hide-on-desktop">2020</td><td>5</td><td class="hide-on-mobile">5</td><td class="hide-on-mobile">6</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://www.lesswrong.com/posts/vH7n8tuPxpPyKJpuX/exams-only-universities"/>Exams-Only Universities</td><td></td><td class="hide-on-mobile">2022-11-06</td><td class="hide-on-desktop">2022</td><td>5</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">5</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/minimalism.html"/>Notes on minimalism</td><td>Productivity</td><td class="hide-on-mobile">2019-04-27</td><td class="hide-on-desktop">2019</td><td>4</td><td class="hide-on-mobile">7</td><td class="hide-on-mobile">5</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/timetracking.html"/>How I use Clockify, my timetracking app</td><td>Productivity</td><td class="hide-on-mobile">2022-01-11</td><td class="hide-on-desktop">2022</td><td>4</td><td class="hide-on-mobile">7</td><td class="hide-on-mobile">4</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/How-to-buy-attention.html"/>How to buy attention?</td><td>Productivity</td><td class="hide-on-mobile"></td><td class="hide-on-desktop"></td><td>4</td><td class="hide-on-mobile">7</td><td class="hide-on-mobile">4</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Signaling-importance.html"/>Signaling importance</td><td></td><td class="hide-on-mobile">2020-12-08</td><td class="hide-on-desktop">2020</td><td>4</td><td class="hide-on-mobile">6</td><td class="hide-on-mobile">3</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://timelines.issarice.com/wiki/Timeline_of_brain_preservation"/>Timeline of brain preservation</td><td>Cryonics</td><td class="hide-on-mobile">2019-01-23</td><td class="hide-on-desktop">2019</td><td>4</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a target="_blank" href="http://lessdead.com/how-many-humans-will-have-their-brain-preserved-forecasts-and-trends"/>How many humans will have their brain preserved? Forecasts and trends</td><td>Cryonics</td><td class="hide-on-mobile">2020-05-03</td><td class="hide-on-desktop">2020</td><td>4</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/weighted-reverse-auction.html"/>Weighted reverse auction</td><td>Community</td><td class="hide-on-mobile">2019-04-29</td><td class="hide-on-desktop">2019</td><td>3</td><td class="hide-on-mobile">6</td><td class="hide-on-mobile">5</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/metatags.html"/>Meta-tags</td><td>Meta</td><td class="hide-on-mobile">2019-12-04</td><td class="hide-on-desktop">2019</td><td>3</td><td class="hide-on-mobile">5</td><td class="hide-on-mobile">3</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Discussion-platform-comparison.html"/>Discussion platform comparison</td><td>Lifelogging</td><td class="hide-on-mobile">2019-12-13</td><td class="hide-on-desktop">2019</td><td>3</td><td class="hide-on-mobile">5</td><td class="hide-on-mobile">1</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://www.lesswrong.com/posts/EHkGW9c5Gjjmgkm3o/what-questions-about-the-future-would-influence-people-s"/>What questions about the future would influence people’s actions today if they were informed by a prediction market?</td><td></td><td class="hide-on-mobile">2019-07-21</td><td class="hide-on-desktop">2019</td><td>3</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">3</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/communities.html"/>Montreal Communities</td><td>Local</td><td class="hide-on-mobile"></td><td class="hide-on-desktop"></td><td>2</td><td class="hide-on-mobile">3</td><td class="hide-on-mobile">1</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Tips-for-people-in-Montreal.html"/>Tips for people in Montreal</td><td>Local</td><td class="hide-on-mobile">2019-04-16</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">3</td><td class="hide-on-mobile">1</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Typology-on-the-desirability-of-suicide.html"/>A typology of the value of intervening with suicidal people</td><td>Altruism</td><td class="hide-on-mobile">2019-04-14</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Rules-for-meta-gaming.html"/>Rules for meta-gaming</td><td></td><td class="hide-on-mobile">2019-05-26</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://www.lesswrong.com/posts/evDZoYG4p6ZkQQkDw/surviving-petrov-day"/>Surviving Petrov Day</td><td>Altruism</td><td class="hide-on-mobile">2020-09-26</td><td class="hide-on-desktop">2020</td><td>2</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/posters.html"/>Posters</td><td>Community</td><td class="hide-on-mobile">2019-03-08</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">2</td><td class="hide-on-mobile">1</td></tr>
+      <tr><td class="left"><a target="_blank" href="https://www.lesswrong.com/posts/6ag3vBEearqTZvHW3/reference-post-info-cone"/>[Reference Post] Info cone</td><td>Altruism</td><td class="hide-on-mobile">2020-03-04</td><td class="hide-on-desktop">2020</td><td>2</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">4</td></tr>
+      <tr><td class="left"><a target="_blank" href="http://lessdead.com/cryonics-2019-annual-update"/>Cryonics 2019 Annual Update</td><td>Cryonics</td><td class="hide-on-mobile">2020-02-12</td><td class="hide-on-desktop">2020</td><td>2</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/List-of-projects-on-gender-neutrality.html"/>List of projects on gender neutrality</td><td></td><td class="hide-on-mobile">2019-03-21</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">2</td></tr>
+      <tr><td class="left"><a href="https://matiroy.com/writings/Trying-to-be-immortal-is-fucking-crazy.html"/>Trying to be immortal is fucking crazy</td><td></td><td class="hide-on-mobile">2019-03-31</td><td class="hide-on-desktop">2019</td><td>2</td><td class="hide-on-mobile">1</td><td class="hide-on-mobile">2</td></tr>
     </tbody>
   </table>
   <br />
