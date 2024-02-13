@@ -218,6 +218,11 @@ table td:not(.left) {
   background-color: rgb(245, 245, 245);
 }
 
+.meta-info {
+  font-style: italic;
+  color: darkgray;
+  text-align: center;
+}
 
 /***** Disqus *****/
 
@@ -231,3 +236,6 @@ table td:not(.left) {
 .title-link {
   font-weight: bold;
 }
+
+
+
