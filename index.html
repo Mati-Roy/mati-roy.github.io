@@ -58,6 +58,21 @@
       width: 10px !important;
       height: 12px !important;
     }
+
+    
+    /* CSS for mobile devices */
+    @media (max-width: 768px) {
+      .img {
+          width: 350px;
+      }
+    }
+    
+    /* CSS for desktop devices */
+    @media (min-width: 768px) {
+      .img {
+          width: 100%;
+      }
+    }
   </style>
 
   <link rel="stylesheet" href="css/TomasikCSS.css" />
@@ -83,7 +98,7 @@
 </br>
 <h1>Mati Roy</h1>
 
-<img class="img" style="text-align: center; width: 350px;" src="/images/funny_profile_pic.jpg"/>
+<img class="img" style="text-align: center;" src="/images/funny_profile_pic.jpg"/>
 
 
 <p style="text-align: center; padding-top: 10px;">Hello! I am human, with human face and human name, <a target="_blank" href="https://matiroy.com/resume.html">doing human stuff</a>. Your monkey brain can now associate those with my content.</p>
