@@ -1,3 +1,18 @@
+
+/* CSS for mobile devices */
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* CSS for desktop devices */
+@media (min-width: 768px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
 body {
   color: rgb(40, 40, 40);
   max-width: 825px;
