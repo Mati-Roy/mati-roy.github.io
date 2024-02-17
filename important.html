@@ -46,6 +46,11 @@
     margin-left: 50%;
     transform: translateX(-50%);" src="/images/7th-extinction.jpg"/>
 
+  <p>Consider:</p>
+  <ul id="todoList">
+    <!-- Fixed to-do items will be added here dynamically -->
+  </ul>
+  
   <p>Subscribe to the next addition to this list. I only share information I find very valuable – so far, since 2019-10-02, I've sent <a target="_blank"
         href="https://us20.campaign-archive.com/home/?u=a40712d533b2cb9c141cdd726&id=8d1eebe353">0
         emails</a>, and I plan to continue sending few as I value your attention.</p>
@@ -262,6 +267,83 @@ My favorite introduction to cryonics: <a target="_blank" href="https://waitbutwh
 
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script type="text/javascript">
+
+  document.addEventListener('DOMContentLoaded', () => {
+    renderTodos();
+  });
+  
+  // Updated staticTodos array to include items for both lists
+  const staticTodos = [
+    { task: 'Signing up for cryonics', completed: false, url: '/important.html#cryonics', list: 1 },
+    { task: 'Lifelogging', completed: false, url: '/important.html#lifelogging', list: 1 },
+    { task: 'Saving money', completed: false, url: '/important.html#savingmoney', list: 1 },
+    { task: 'Selecting embryos', completed: false, url: 'https://www.lesswrong.com/posts/yT22RcWrxZcXyGjsA/how-to-have-polygenically-screened-children', list: 1 },
+    { task: 'Understanding AI x-risks', completed: false, url: '/important.html#aixrisks', list: 1 },
+    { task: 'Subscribing to the next addition to this list', completed: false, url: '/important.html', list: 1 }
+    
+  ];
+  
+  function toggleTodo(index) {
+    staticTodos[index].completed = !staticTodos[index].completed;
+    saveTodos();
+  }
+  
+  function saveTodos() {
+    localStorage.setItem('todos', JSON.stringify(staticTodos));
+    renderTodos();
+  }
+  
+  function renderTodos() {
+    // Render for todoList1
+    renderTodoList('todoList', 1);
+    // Render for todoList2
+    renderTodoList('todoList2', 2);
+  }
+  
+  function renderTodoList(listId, listNumber) {
+    const todoList = document.getElementById(listId);
+    todoList.innerHTML = ''; // Clear current todos
+  
+    staticTodos.filter(todo => todo.list === listNumber).forEach((todo, index) => {
+      const todoItem = document.createElement('li');
+      
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = todo.completed;
+      checkbox.classList.add("checkbox"); // Use classList.add instead of class
+      checkbox.onchange = () => toggleTodo(staticTodos.indexOf(todo)); // Use indexOf to find the correct index in the main array
+      
+      const label = document.createElement('label');
+      label.style.marginLeft = '8px'; // Add space between checkbox and label
+      
+      const link = document.createElement('a');
+      link.href = todo.url;
+      link.textContent = todo.task;
+      //link.target = '_blank'; // Open in a new tab
+      label.appendChild(link);
+      
+      todoItem.appendChild(checkbox);
+      todoItem.appendChild(label);
+      todoList.appendChild(todoItem);
+    });
+  }
+  
+  // On page load, check for saved todos and update the staticTodos accordingly
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTodos = JSON.parse(localStorage.getItem('todos'));
+    if (savedTodos) {
+      savedTodos.forEach((savedTodo, index) => {
+        const todo = staticTodos.find(todo => todo.task === savedTodo.task);
+        if (todo) {
+          todo.completed = savedTodo.completed;
+        }
+      });
+      renderTodos(); // Render the lists again with updated completion statuses
+    }
+  });
+
+
+  
   var $table = $('table');
   $table.tablesorter({
     theme: 'bootstrap',
